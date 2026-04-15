@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shamithasri G | Graphic Designer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <span class="logo">S G</span>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger">&#9776;</button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" onclick="closeMobile()">About</a></li>
+      <li><a href="#work" onclick="closeMobile()">Work</a></li>
+      <li><a href="#skills" onclick="closeMobile()">Skills</a></li>
+      <li><a href="#resume" onclick="closeMobile()">Resume</a></li>
+      <li><a href="#contact" onclick="closeMobile()">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg-text">DESIGN</div>
+    <div class="hero-content">
+      <p class="hero-subtitle">Graphic Designer</p>
+      <h1 class="hero-name">Shamithasri<br/><em>G.</em></h1>
+      <p class="hero-desc">Creating visual stories through logos, posters,<br/>magazines & brand identities.</p>
+      <div class="hero-btns">
+        <a href="#work" class="btn-primary">View Work</a>
+        <a href="#contact" class="btn-outline">Contact Me</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="section-label">01 — About</div>
+    <div class="about-grid">
+      <div class="about-left">
+        <h2 class="section-title">Designing with<br/><em>purpose & passion</em></h2>
+        <p>Creative and passionate Graphic Designer with experience in designing digital and print creatives. I seek opportunities to contribute innovative design ideas, enhance brand identity, and create visually impactful content using modern tools and trends.</p>
+        <p>My goal is to craft designs that not only look beautiful but also communicate the right message for each unique brand.</p>
+        <div class="about-tags">
+          <span>Adobe Photoshop</span>
+          <span>Illustrator</span>
+          <span>CorelDRAW</span>
+          <span>InDesign</span>
+        </div>
+      </div>
+      <div class="about-right">
+        <div class="info-card">
+          <div class="info-item">
+            <span class="info-label">Location</span>
+            <span class="info-value">Coimbatore, Tamil Nadu</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Email</span>
+            <span class="info-value">Shamiguru2112@gmail.com</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Phone</span>
+            <span class="info-value">8248397875</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Education</span>
+            <span class="info-value">B.Sc Costume Design<br/>PSGR Krishnammal College, 2022–2025</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Experience</span>
+            <span class="info-value">Freelancer — Nexora Consulting<br/>Coimbatore · 6 Months</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section class="work" id="work">
+    <div class="section-label">02 — Work</div>
+    <h2 class="section-title">Selected<br/><em>Projects</em></h2>
+
+    <!-- LOGOS -->
+    <div class="category-block">
+      <h3 class="category-title"><span class="cat-num">①</span> Logo Design</h3>
+      <p class="category-desc">Brand identity and logo creation for diverse clients</p>
+      <div class="logo-grid">
+
+        <div class="logo-card" onclick="openLight('assets/logo-orderla.jpg', 'Orderla', 'Delivery app logo — circular flow concept with orange & green palette')">
+          <div class="logo-img-wrap">
+            <img src="assets/logo-orderla.jpg" alt="Orderla Logo" />
+            <div class="logo-overlay">
+              <span>View</span>
+            </div>
+          </div>
+          <div class="logo-info">
+            <h4>Orderla</h4>
+            <p>Delivery App Brand Identity</p>
+          </div>
+        </div>
+
+        <div class="logo-card" onclick="openLight('assets/logo-econiram.jpg', 'ecoNiram', 'Food brand logo — colourful flame droplet representing freshness and variety')">
+          <div class="logo-img-wrap">
+            <img src="assets/logo-econiram.jpg" alt="ecoNiram Logo" />
+            <div class="logo-overlay">
+              <span>View</span>
+            </div>
+          </div>
+          <div class="logo-info">
+            <h4>ecoNiram</h4>
+            <p>Gusteau Food Pvt Ltd — Brand Logo</p>
+          </div>
+        </div>
+
+        <div class="logo-card" onclick="openLight('assets/logo-ulagu.jpg', 'Ulagu', 'Tamil infinity symbol logo — merging cultural heritage with modern design')">
+          <div class="logo-img-wrap">
+            <img src="assets/logo-ulagu.jpg" alt="Ulagu Logo" />
+            <div class="logo-overlay">
+              <span>View</span>
+            </div>
+          </div>
+          <div class="logo-info">
+            <h4>Ulagu</h4>
+            <p>Tamil Infinity Symbol — Brand Identity</p>
+          </div>
+        </div>
+
+        <div class="logo-card" onclick="openLight('assets/logo-makeup.jpg', 'Makeup Zone by Rithu', 'Beauty brand logo — elegant R monogram with feminine silhouette and brush')">
+          <div class="logo-img-wrap">
+            <img src="assets/logo-makeup.jpg" alt="Makeup Zone Logo" />
+            <div class="logo-overlay">
+              <span>View</span>
+            </div>
+          </div>
+          <div class="logo-info">
+            <h4>Makeup Zone by Rithu</h4>
+            <p>Beauty Brand — Logo & Identity</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- POSTERS -->
+    <div class="category-block">
+      <h3 class="category-title"><span class="cat-num">②</span> Posters & Flyers</h3>
+      <p class="category-desc">Event promotions, club forms & marketing creatives</p>
+      <div class="poster-grid">
+
+        <div class="poster-card" onclick="openLight('assets/poster-summer.jpg', 'Summer Party Flyer', 'Cavern Presents — vibrant tropical sunset event poster with bold typography')">
+          <img src="assets/poster-summer.jpg" alt="Summer Party Poster" />
+          <div class="poster-info">
+            <h4>Summer Party</h4>
+            <p>Event Flyer — Cavern Presents</p>
+          </div>
+        </div>
+
+        <div class="poster-card" onclick="openLight('assets/poster-fatman.jpg', 'Fatman Club Registration', 'Club registration form with branded header, membership tiers and terms')">
+          <img src="assets/poster-fatman.jpg" alt="Fatman Club Form" />
+          <div class="poster-info">
+            <h4>Fatman Club</h4>
+            <p>Membership Registration Form</p>
+          </div>
+        </div>
+
+        <div class="poster-card" onclick="openLight('assets/poster-fatman2.jpg', 'Fatman Club Benefits', 'Club membership benefits sheet — tiered pricing layout')">
+          <img src="assets/poster-fatman2.jpg" alt="Fatman Club Benefits" />
+          <div class="poster-info">
+            <h4>Fatman Club</h4>
+            <p>Membership Benefits Sheet</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- MAGAZINES -->
+    <div class="category-block">
+      <h3 class="category-title"><span class="cat-num">③</span> Magazine & Editorial</h3>
+      <p class="category-desc">Layout design for print and digital publications</p>
+      <div class="magazine-grid">
+
+        <div class="magazine-card wide" onclick="openLight('assets/mag-flimfare.jpg', 'Flimfare Magazine', 'Full fashion magazine layout — cover, spreads, editorial pages with bold typography')">
+          <img src="assets/mag-flimfare.jpg" alt="Flimfare Magazine" />
+          <div class="mag-info">
+            <h4>Flimfare</h4>
+            <p>Fashion & Lifestyle Magazine — Full Layout</p>
+            <div class="mag-tags"><span>Cover Design</span><span>Editorial</span><span>Typography</span></div>
+          </div>
+        </div>
+
+        <div class="magazine-card" onclick="openLight('assets/mag-mockup.jpg', 'Magazine Mockup', 'Compiled magazine mockup showing multiple spread layouts and cover')">
+          <img src="assets/mag-mockup.jpg" alt="Magazine Mockup" />
+          <div class="mag-info">
+            <h4>Magazine Mockup</h4>
+            <p>Multi-spread Layout Presentation</p>
+            <div class="mag-tags"><span>Print Design</span><span>Layout</span></div>
+          </div>
+        </div>
+
+        <div class="magazine-card" onclick="openLight('assets/mag-crime.jpg', 'Crime Article Layout', 'Editorial article layout — Final Phase: Death Warrants with two-column text and dramatic background')">
+          <img src="assets/mag-crime.jpg" alt="Crime Article" />
+          <div class="mag-info">
+            <h4>Editorial Article</h4>
+            <p>Crime & Justice — Two-column Layout</p>
+            <div class="mag-tags"><span>Editorial</span><span>Print</span></div>
+          </div>
+        </div>
+
+        <div class="magazine-card" onclick="openLight('assets/mag-children.jpg', 'Children\'s Magazine', 'Kids entertainment magazine spread featuring animated characters and movie posters')">
+          <img src="assets/mag-children.jpg" alt="Children's Magazine" />
+          <div class="mag-info">
+            <h4>Children's Magazine</h4>
+            <p>Kids Entertainment — Cartoon Spread</p>
+            <div class="mag-tags"><span>Children's Design</span><span>Layout</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills" id="skills">
+    <div class="section-label">03 — Skills</div>
+    <h2 class="section-title">Expertise &<br/><em>Capabilities</em></h2>
+    <div class="skills-grid">
+
+      <div class="skill-block">
+        <div class="skill-icon">✦</div>
+        <h4>Design Tools</h4>
+        <ul>
+          <li>Adobe Photoshop</li>
+          <li>Adobe Illustrator</li>
+          <li>CorelDRAW</li>
+          <li>Adobe InDesign</li>
+        </ul>
+      </div>
+
+      <div class="skill-block">
+        <div class="skill-icon">◈</div>
+        <h4>Specialisations</h4>
+        <ul>
+          <li>Logo Design</li>
+          <li>Branding & Visual Identity</li>
+          <li>Social Media Creatives</li>
+          <li>Print & Digital Design</li>
+        </ul>
+      </div>
+
+      <div class="skill-block">
+        <div class="skill-icon">❋</div>
+        <h4>Print & Digital</h4>
+        <ul>
+          <li>Poster & Banner Design</li>
+          <li>Brochure / Flyer Design</li>
+          <li>Print Production Layouts</li>
+          <li>Magazine Layouts</li>
+        </ul>
+      </div>
+
+      <div class="skill-block">
+        <div class="skill-icon">◇</div>
+        <h4>Editing</h4>
+        <ul>
+          <li>Photo Retouching</li>
+          <li>Color Correction</li>
+          <li>Creative Composition</li>
+          <li>Typography Direction</li>
+        </ul>
+      </div>
+
+      <div class="skill-block">
+        <div class="skill-icon">◎</div>
+        <h4>Soft Skills</h4>
+        <ul>
+          <li>Project Management</li>
+          <li>Client Communication</li>
+          <li>Time Management</li>
+          <li>Leadership & Teamwork</li>
+        </ul>
+      </div>
+
+      <div class="skill-block">
+        <div class="skill-icon">◉</div>
+        <h4>Languages</h4>
+        <ul>
+          <li>English (Fluent)</li>
+          <li>Tamil (Fluent)</li>
+          <li>Telugu (Basics)</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- RESUME -->
+  <section class="resume-section" id="resume">
+    <div class="section-label">04 — Resume</div>
+    <h2 class="section-title">Experience &<br/><em>Education</em></h2>
+
+    <div class="resume-grid">
+      <div class="resume-col">
+        <h3 class="resume-col-title">Work Experience</h3>
+        <div class="resume-item">
+          <div class="resume-dot"></div>
+          <div class="resume-content">
+            <span class="resume-date">6 Months</span>
+            <h4>Graphic Designer (Freelancer)</h4>
+            <p class="resume-company">NEXORA Consulting · Coimbatore</p>
+            <ul class="resume-bullets">
+              <li>Designed social media posts, promotional banners, and marketing creatives to boost digital presence.</li>
+              <li>Developed professional layouts for branding materials ensuring visual consistency.</li>
+              <li>Executed precise typography and color schemes to enhance design aesthetics.</li>
+              <li>Collaborated with clients to develop content aligned with specific brand guidelines.</li>
+              <li>Managed multiple design tasks simultaneously to meet strict project deadlines.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="resume-col">
+        <h3 class="resume-col-title">Education</h3>
+        <div class="resume-item">
+          <div class="resume-dot"></div>
+          <div class="resume-content">
+            <span class="resume-date">2022 — 2025</span>
+            <h4>Bachelors of Science in Costume Design</h4>
+            <p class="resume-company">PSGR Krishnammal College for Women · Coimbatore</p>
+          </div>
+        </div>
+
+        <h3 class="resume-col-title" style="margin-top:2.5rem;">Projects & Portfolio</h3>
+        <div class="resume-item">
+          <div class="resume-dot"></div>
+          <div class="resume-content">
+            <h4>Marketing Creatives</h4>
+            <p>Designed promotional assets for consulting-based marketing campaigns.</p>
+          </div>
+        </div>
+        <div class="resume-item">
+          <div class="resume-dot"></div>
+          <div class="resume-content">
+            <h4>Advertising</h4>
+            <p>Developed various social media posters and advertisement designs.</p>
+          </div>
+        </div>
+        <div class="resume-item">
+          <div class="resume-dot"></div>
+          <div class="resume-content">
+            <h4>Brand Templates</h4>
+            <p>Created standardised brand-style templates for consistent digital posting.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="resume-download-wrap">
+      <a href="assets/shamithasri-resume.pdf" download class="btn-download">
+        <span class="dl-icon">↓</span> Download Resume PDF
+      </a>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="section-label">05 — Contact</div>
+    <h2 class="section-title">Let's Work<br/><em>Together</em></h2>
+    <p class="contact-intro">Available for freelance projects, brand identity work, and design collaborations.</p>
+    <div class="contact-cards">
+      <a href="mailto:Shamiguru2112@gmail.com" class="contact-card">
+        <div class="contact-icon">✉</div>
+        <span class="contact-label">EMAIL</span>
+        <span class="contact-value">Shamiguru2112@gmail.com</span>
+      </a>
+      <a href="tel:+918248397875" class="contact-card">
+        <div class="contact-icon">✆</div>
+        <span class="contact-label">PHONE</span>
+        <span class="contact-value">+91 8248397875</span>
+      </a>
+      <div class="contact-card">
+        <div class="contact-icon">◎</div>
+        <span class="contact-label">LOCATION</span>
+        <span class="contact-value">Coimbatore, Tamil Nadu</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2025 Shamithasri G · Graphic Designer · Coimbatore</p>
+    <p class="footer-sub">Designed with care ✦</p>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" onclick="closeLight()">
+    <div class="lightbox-inner" onclick="event.stopPropagation()">
+      <button class="lb-close" onclick="closeLight()">✕</button>
+      <img src="" alt="" id="lbImg" />
+      <div class="lb-caption">
+        <h4 id="lbTitle"></h4>
+        <p id="lbDesc"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
